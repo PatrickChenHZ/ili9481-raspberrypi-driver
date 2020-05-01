@@ -5,6 +5,12 @@ Connect to raspberrypi with 8-bit parallel interface and uses framebuffer on the
 
 Uses Notro/fbtft on ili9481.
 
+Wiring:
+```
+dc:18,reset:7,wr:17,cs:4,db00:22,db01:23,db02:24,db03:10,db04:25,db05:9,db06:11,db07:8
+```
+If your display manual have no dc wire marked, Use ```rs```instead, it's same. Remeber it's not rst. For other wires follow instruction from your vendor.
+
 In your console type:
 
 ```
